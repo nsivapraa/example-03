@@ -11,21 +11,21 @@ let blob3 = {
   r: 26, // Base radius
   points: 20, // Number of points used to draw the blob
   wobble: 7, // Edge deformation amount
-  wobbleFreq: 30,
+  wobbleFreq: 0.9,
 
   // Time values for breathing animation
-  t: 1,
-  tSpeed: 0.5,
+  t: 0,
+  tSpeed: 0.01,
 
   // Physics: velocity
   vx: 0, // Horizontal velocity
   vy: 0, // Vertical velocity
 
   // Movement tuning
-  accel: 0.85, // Horizontal acceleration
-  maxRun: 6.0, // Maximum horizontal speed
+  accel: 0.55, // Horizontal acceleration
+  maxRun: 4.0, // Maximum horizontal speed
   gravity: 0.65, // Downward force
-  jumpV: -15.0, // Initial jump impulse
+  jumpV: -11.0, // Initial jump impulse
 
   // State
   onGround: false, // True when standing on a platform
